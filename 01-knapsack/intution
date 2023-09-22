@@ -1,0 +1,6 @@
+Use a 2D array (t[i][j]) where i represents the number of items considered, and j represents the remaining capacity.
+Initialize the array with zeros.
+Build the table iteratively, considering two cases:
+Inclusion Case: If the current item can fit in the remaining capacity (wt[i-1] <= j), calculate the maximum value by either including or excluding the item.
+Exclusion Case: If the current item cannot fit in the remaining capacity (wt[i-1] > j), set t[i][j] to the value calculated for the previous item at the same capacity.
+The final answer is in t[n][w], where n is the total number of items, and w is the knapsack's capacity.
